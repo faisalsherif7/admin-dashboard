@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Mono&display=swap');
 
 :root {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    font-family: 'Ubuntu Mono', monospace;
+    grid-template-columns: 1fr 4fr;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 .sidebar {
@@ -15,6 +20,14 @@
     grid-row: 1 / 3;
     background-color: #343a3f;
     color: white;
+    padding-left: 20px;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .logo svg {
@@ -34,13 +47,13 @@
 
 .nav-primary ul li {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
 }
 
-.logo {
-    display: flex;
-    gap: 2px;
-    font-size: 1.4rem;
+.settings {
+    margin-top: 2rem;
 }
 
 .search {
