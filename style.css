@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +7,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 .sidebar {
