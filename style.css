@@ -57,12 +57,38 @@ body {
     margin-top: 2rem;
 }
 
-.search {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.header {
+    padding: 15px;
 }
 
-.intro-bar {
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header svg {
+    width: 25px;
+}
+
+.search-bar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30px 1fr;    
+    gap: 5px;
+}
+
+.search-bar input {
+    border-radius: 20px;
+    height: 1.5rem;
+    border: 0px;
+    background-color: rgb(221, 221, 221);
+}
+
+.account {
+    padding-left: 1rem;
+}
+
+.header-bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
