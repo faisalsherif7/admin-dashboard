@@ -82,7 +82,8 @@ body {
     height: 1.5rem;
     border: 0px;
     background-color: rgb(221, 221, 221);
-    width: min(600px, 80%);
+    width: min(550px, 80%);
+    padding-left: 15px;
 }
 
 .account {
