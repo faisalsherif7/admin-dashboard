@@ -149,8 +149,8 @@ p {
 
 .main-content {
     display: grid;
-    grid-template-columns: min(100px, 2fr) 1fr;
-    border: 2px solid blue;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
     background-color: #dddddd;
     padding: 20px;
 }
@@ -166,9 +166,8 @@ p {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    border: 2px solid red;
     resize: both;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
     gap: 30px 20px;
 }
 
@@ -179,6 +178,21 @@ p {
     border-left: 10px solid #343a3f;
     height: 250px;
     overflow: hidden;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 57px auto;
+}
+
+.announcements p {
+    margin: 0;
+}
+
+.announcements-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .trending {
