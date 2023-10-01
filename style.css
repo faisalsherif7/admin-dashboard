@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+p {
+    padding: 0;
+}   
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -118,7 +122,6 @@ body {
 
 .hello p {
     margin: 0;
-    padding: 0;
     font-weight: bold;
 }
 
@@ -148,11 +151,21 @@ body {
 .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #f5f7fb;
+    background-color: #dddddd;
+    padding: 20px;
 }
 
 .your-projects {
     grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto auto;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
 }
 
 .trending {
