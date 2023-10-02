@@ -2,6 +2,8 @@
 
 :root {
     box-sizing: border-box;
+    --main-bg-color: #343a3f;
+    --secondary-bg-color: #dddddd;
 }
 
 body {
@@ -22,7 +24,7 @@ p {
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    background-color: #343a3f;
+    background-color: var(--main-bg-color);
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -88,7 +90,7 @@ p {
     border-radius: 20px;
     height: 1.5rem;
     border: 0px;
-    background-color: rgb(221, 221, 221);
+    background-color: var(--secondary-bg-color);
     width: min(550px, 80%);
     padding-left: 15px;
 }
@@ -143,7 +145,7 @@ p {
     padding: 9px 20px;
     border-radius: 20px;
     border: 0px;
-    background-color: #343a3f;
+    background-color: var(--main-bg-color);
     color: white;
 }
 
@@ -151,7 +153,7 @@ p {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    background-color: #dddddd;
+    background-color: var(--secondary-bg-color);
     padding: 20px;
 }
 
@@ -175,7 +177,7 @@ p {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    border-left: 10px solid #343a3f;
+    border-left: 10px solid var(--main-bg-color);
     height: 250px;
     overflow: hidden;
 }
