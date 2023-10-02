@@ -103,8 +103,10 @@ p {
     grid-template-columns: 1fr 1fr 3fr;
 }
 
-.account > svg + svg {
+.account > svg + svg,
+.header-bottom svg {
     width: 50px;
+    fill: var(--main-bg-color);
 }
 
 .account p {
@@ -117,10 +119,6 @@ p {
     grid-template-columns: 3fr 1fr;
     align-items: center;
     gap: 10px;
-}
-
-.header-bottom svg {
-    width: 50px;
 }
 
 .welcome {
@@ -228,6 +226,7 @@ p {
     align-self: center;
     justify-self: center;
     width: 50px;
+    fill: var(--main-bg-color);
 }
 
 .trending p {
