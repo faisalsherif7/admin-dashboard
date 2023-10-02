@@ -13,7 +13,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100px 50px 8fr;
+    grid-template-rows: 100px 50px auto;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -163,10 +163,11 @@ body {
     gap: 20px;
     background-color: var(--secondary-bg-color);
     padding: 25px 30px;
+    font-size: 0.9rem;
 }
 
 .title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 0;
 }
@@ -174,9 +175,11 @@ body {
 .projects-content {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 15px;
     gap: 20px 20px;
+    align-content: start;
+    grid-auto-rows: 250px;
 }
 
 .projects-content .title {
@@ -190,7 +193,11 @@ body {
     border-left: 10px solid var(--main-bg-color);
 
     display: grid;
-    grid-template-rows: 20px 1fr 30px;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.card p {
+    margin: 0;
 }
 
 .icons {
@@ -200,31 +207,44 @@ body {
 }
 
 .card svg {
-    width: 35px;
+    width: 25px;
 }
 
 .side-pane {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .announcements {
     display: grid;
-    grid-template-rows: 35px;
+    grid-template-columns: minmax(250px, 1fr);
+    grid-template-rows: 35px; 
+    align-content: start;
 }
 
 .announcements-card {
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     display: grid;
-    gap: 15px;
+    align-content: start;
+    gap: 20px;
+}
+
+.announcements-card p {
+    margin: 0;
+}
+
+.row {
+    display: grid;
+    gap: 5px;
 }
 
 .trending {
     display: grid;
     grid-template-rows: 35px;
+    align-content: start;
 }
 
 .trending-card {
@@ -235,6 +255,7 @@ body {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
+    gap: 20px 0px;
 }
 
 .trending-card svg {
