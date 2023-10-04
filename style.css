@@ -6,6 +6,11 @@
     --secondary-bg-color: #e2e8f0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     margin: 0;
 }
